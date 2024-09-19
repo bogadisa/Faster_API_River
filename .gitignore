@@ -53,3 +53,14 @@ dkms.conf
 
 # Env file
 .env
+
+# Python
+venv/
+
+# VS Code
+.vscode/
+
+# Setuptools
+dist/
+*.pyd
+*.egg-info/

@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "example"
+version = "0.0.1"
+
+[tool.setuptools]
+ext-modules = [
+    {name="spam", sources = ["src/package/C_extension_modules/example.c"]},
+    {name="c_add", sources = ["src/package/C_extension_modules/example_yt.c"]}
+]
